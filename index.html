@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mis Ideas Creativas</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Mis Ideas Creativas</h1>
+        <p>Guarda una idea antes de que se te escape.</p>
+    </header>
+
+    <main>
+
+        <section class="formulario">
+
+            <h2>Nueva idea</h2>
+
+            <input 
+                type="text" 
+                id="titulo" 
+                placeholder="Título de la idea"
+            >
+
+            <select id="categoria">
+                <option value="">Selecciona una categoría</option>
+                <option value="Fotografía">Fotografía</option>
+                <option value="Diseño">Diseño</option>
+                <option value="Video">Video</option>
+                <option value="Marketing">Marketing</option>
+                <option value="Otro">Otro</option>
+            </select>
+
+            <textarea 
+                id="descripcion" 
+                placeholder="Describe brevemente tu idea..."
+            ></textarea>
+
+            <button id="guardar">
+                Guardar idea
+            </button>
+
+        </section>
+
+        <section class="ideas">
+
+            <div class="encabezado-ideas">
+                <h2>Ideas guardadas</h2>
+                <span id="contador">0 ideas</span>
+            </div>
+
+            <div id="listaIdeas">
+                <!-- Aquí aparecerán las ideas -->
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

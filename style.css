@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #1f1f1f;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #666;
+}
+
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding-bottom: 50px;
+}
+
+.formulario,
+.ideas {
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #111;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: #111;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #333;
+}
+
+.encabezado-ideas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#contador {
+    font-size: 14px;
+    color: #777;
+}
+
+.tarjeta-idea {
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    padding: 18px;
+    margin-bottom: 15px;
+}
+
+.tarjeta-idea h3 {
+    margin-bottom: 8px;
+}
+
+.categoria {
+    display: inline-block;
+    font-size: 12px;
+    background: #eee;
+    padding: 5px 9px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.tarjeta-idea p {
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+/* Fecha de creación de la idea */
+.fecha {
+    display: block;
+    color: #888;
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+.eliminar {
+    background: #e8e8e8;
+    color: #111;
+    padding: 9px;
+}
+
+.eliminar:hover {
+    background: #d5d5d5;
+}
+
+@media (max-width: 700px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+}
